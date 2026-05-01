@@ -68,7 +68,7 @@ function EventDetail() {
           <div className="glass rounded-3xl p-6 md:p-8">
             <h2 className="font-display text-2xl font-bold mb-4">Rules</h2>
             <ul className="space-y-3">
-              {event.rules.map((r) => (
+              {event.rules.map((r: string) => (
                 <li key={r} className="flex items-start gap-3 text-sm">
                   <CheckCircle2 className="h-5 w-5 text-accent shrink-0 mt-0.5" />
                   <span>{r}</span>
